@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <main>
+            <div class="slider">
+                <!-- <img fetchpriority="high" alt="" src="./images/banner-home.jpg" class="hero-banner__image"> -->
+                <div class="swiper" id="homeSlider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide slider__slide">
+                        <img fetchpriority="high" alt="" src="./images/home-slider1.jpg" class="slider__image">
+                        <div class="slider__overlay"></div>
+                        <div class="slider__textWrapper">
+                            <h1 class="slider__title">Drabiny ratunkowe</h1>
+                            <h2 class="slider__subtitle">domy modułowe - budownictwo jednorodzinne</h1>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img fetchpriority="high" alt="" src="./images/home-slider2.webp" class="slider__image">
+                        <div class="slider__overlay"></div>
+                        <div class="slider__textWrapper">
+                            <h1 class="slider__title">Osiedla mieszkaniowe</h1>
+                            <h2 class="slider__subtitle">współpraca, zarządzanie, podwyższanie standardów</h1>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img fetchpriority="high" alt="" src="./images/home-slider3.webp" class="slider__image">
+                        <div class="slider__overlay"></div>
+                        <div class="slider__textWrapper">
+                            <h1 class="slider__title">Platformy mobilne</h1>
+                            <h2 class="slider__subtitle">firmy transportowe, pojazdy specjalne</h1>
+                        </div>
+                      </div>
+                      ...
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                <header class="header">
+                    {{> menu}}
+                </header>
+            </div>
+    </main>
+    <script src="./main.js" type="module"></script>
+</html>
