@@ -2,6 +2,7 @@
   "name": "drabina",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://jakwrobel.github.io/drabina",
   "main": "index.html",
   "type": "module",
   "browserslist": [
@@ -11,6 +12,7 @@
   ],
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.2.0",
     "handlebars": "^4.7.8",
     "postcss": "^8.4.47",
     "sass": "^1.79.4",
@@ -21,7 +23,8 @@
     "start": "vite",
     "test": "jest",
     "build": "vite build",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
