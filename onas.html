@@ -3,7 +3,28 @@
 
     </head>
     <body>
-        {{> menu}}
-        <h1>O nas</h1>
+        <div class="menu">
+        	<div class="menu__wrapper">
+        		<a href="https://modum.dk/" class="logo-link" rel="home"><img src="/assets/logo-DslRwmcV.webp" class="menu__logo" alt=""></a>					
+                <button class="menu__button"> 
+                    <span class="menu__buttonBar menu__buttonBar--top"></span>
+                    <span class="menu__buttonBar menu__buttonBar--middle"></span>
+                    <span class="menu__buttonBar menu__buttonBar--bottom"></span>	
+        		</button>
+        		<nav class="menu__itemsWrapper">
+                    <ul class="menu__itemsList">
+                        <li id="menu-item-0" class="menu__item"><a href="https://modum.dk/" class="menu__link">O nas</a></li>
+                        <li id="menu-item-1" class="menu__item"><a href="https://modum.dk/all-products/" aria-current="page" class="menu__link">Projekt MODUM Polska</a>
+                        </li>
+                        <li id="menu-item-2" class="menu__item"><a href="https://modum.dk/become-a-modum-reseller/" class="menu__link">Drabiny Ratunkowe</a></li>
+                        <li id="menu-item-3" class="menu__item"><a href="https://modum.dk/videos/" class="menu__link">Drabiny Mobilne</a></li>
+                        <li id="menu-item-4" class="menu__item"><a href="#" class="menu__link">Galeria</a>
+                        </li>
+                        <li id="menu-item-5" class="menu__item"><a href="https://modum.dk/contact-us/" class="menu__link">Kontakt</a></li>
+                    </ul>
+                </nav>
+        	</div>
+        </div>
+        <div class="menu__overlay menu__overlay--hidden"></div>        <h1>O nas</h1>
     </body>
 </html>

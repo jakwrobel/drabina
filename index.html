@@ -1,6 +1,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
+      <script type="module" crossorigin src="/assets/index-Cg3facfK.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-C4qWgjDH.css">
     </head>
     <body>
         <main>
@@ -11,7 +13,7 @@
                     <div class="swiper-wrapper">
                       <!-- Slides -->
                       <div class="swiper-slide slider__slide">
-                        <img fetchpriority="high" alt="" src="./images/home-slider1.jpg" class="slider__image">
+                        <img fetchpriority="high" alt="" src="/assets/home-slider1-DOd8a9LK.jpg" class="slider__image">
                         <div class="slider__overlay"></div>
                         <div class="slider__textWrapper">
                             <h1 class="slider__title">Drabiny ratunkowe</h1>
@@ -19,7 +21,7 @@
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <img fetchpriority="high" alt="" src="./images/home-slider2.webp" class="slider__image">
+                        <img fetchpriority="high" alt="" src="/assets/home-slider2-leQ1M7DD.webp" class="slider__image">
                         <div class="slider__overlay"></div>
                         <div class="slider__textWrapper">
                             <h1 class="slider__title">Osiedla mieszkaniowe</h1>
@@ -27,7 +29,7 @@
                         </div>
                       </div>
                       <div class="swiper-slide">
-                        <img fetchpriority="high" alt="" src="./images/home-slider3.webp" class="slider__image">
+                        <img fetchpriority="high" alt="" src="/assets/home-slider3-Cg3pxmwk.webp" class="slider__image">
                         <div class="slider__overlay"></div>
                         <div class="slider__textWrapper">
                             <h1 class="slider__title">Platformy mobilne</h1>
@@ -39,9 +41,29 @@
                     <div class="swiper-pagination"></div>
                   </div>
                 <header class="header">
-                    {{> menu}}
-                </header>
+                    <div class="menu">
+                    	<div class="menu__wrapper">
+                    		<a href="https://modum.dk/" class="logo-link" rel="home"><img src="/assets/logo-DslRwmcV.webp" class="menu__logo" alt=""></a>					
+                            <button class="menu__button"> 
+                                <span class="menu__buttonBar menu__buttonBar--top"></span>
+                                <span class="menu__buttonBar menu__buttonBar--middle"></span>
+                                <span class="menu__buttonBar menu__buttonBar--bottom"></span>	
+                    		</button>
+                    		<nav class="menu__itemsWrapper">
+                                <ul class="menu__itemsList">
+                                    <li id="menu-item-0" class="menu__item"><a href="https://modum.dk/" class="menu__link">O nas</a></li>
+                                    <li id="menu-item-1" class="menu__item"><a href="https://modum.dk/all-products/" aria-current="page" class="menu__link">Projekt MODUM Polska</a>
+                                    </li>
+                                    <li id="menu-item-2" class="menu__item"><a href="https://modum.dk/become-a-modum-reseller/" class="menu__link">Drabiny Ratunkowe</a></li>
+                                    <li id="menu-item-3" class="menu__item"><a href="https://modum.dk/videos/" class="menu__link">Drabiny Mobilne</a></li>
+                                    <li id="menu-item-4" class="menu__item"><a href="#" class="menu__link">Galeria</a>
+                                    </li>
+                                    <li id="menu-item-5" class="menu__item"><a href="https://modum.dk/contact-us/" class="menu__link">Kontakt</a></li>
+                                </ul>
+                            </nav>
+                    	</div>
+                    </div>
+                    <div class="menu__overlay menu__overlay--hidden"></div>                </header>
             </div>
-    </main>
-    <script src="./main.js" type="module"></script>
+    </main>
 </html>
