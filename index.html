@@ -1,15 +1,16 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <main>
+            <header class="header">
+                {{> menu}}
+            </header>
             <div class="slider">
-                <!-- <img fetchpriority="high" alt="" src="./images/banner-home.jpg" class="hero-banner__image"> -->
                 <div class="swiper" id="homeSlider">
-                    <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                      <!-- Slides -->
                       <div class="swiper-slide slider__slide">
                         <img fetchpriority="high" alt="" src="./images/home-slider1.jpg" class="slider__image">
                         <div class="slider__overlay"></div>
@@ -36,12 +37,11 @@
                       </div>
                       ...
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination slider__pagination"></div>
                   </div>
-                <header class="header">
-                    {{> menu}}
-                </header>
             </div>
+            {{> footer}}
     </main>
+    <script src="https://kit.fontawesome.com/4b0ac2d779.js" crossorigin="anonymous"></script>
     <script src="./main.js" type="module"></script>
 </html>

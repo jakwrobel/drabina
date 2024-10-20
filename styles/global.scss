@@ -1,0 +1,39 @@
+@import 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css';
+
+:root{
+
+    --color-default: #000
+    --bg-color-default: #fff;
+}
+
+html{
+    font-size: 16px;
+    line-height: 1;
+    font-family: 'Calibri',Arial,sans-serif;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-weight: 500;
+    color: var(--color-default);
+    background-color: var(bg-color-default);
+}
+
+main{
+    position: relative;
+    min-height: 100vh;
+}
+
+
+img{
+    border: 0;
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+

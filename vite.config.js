@@ -25,6 +25,7 @@ function getHtmlEntries() {
 }
 
 export default defineConfig({
+  base: '/drabina/',
   plugins: [
     handlebars({
       partialDirectory: resolve(__dirname, 'partials'),
