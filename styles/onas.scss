@@ -1,0 +1,130 @@
+.about{
+    &__wrapper{
+        display: flex;
+        color: #000;
+        padding-bottom: 70px;
+        margin-bottom: 24px;
+
+        @media only screen and (max-width: 768px){
+            flex-direction: column;
+        }
+
+        p{
+            margin: 0 0 20px;
+            line-height: 1.6;
+        }
+    }
+
+
+    &__heading{
+        font-size: 40px;
+        margin:0;
+        font-weight: bold;
+        margin-bottom: 24px;
+
+        @media only screen and (max-width: 1023px){
+            font-size: 32px;
+        }
+
+        @media only screen and (max-width: 768px){
+            font-size: 24px;
+        }
+    }
+
+    &__title{
+        display: block;
+    }
+
+    &__subtitle{
+        display: block;
+        color: #FF0004;
+    }
+
+    &__image{
+        max-height: 400px;
+        padding-right: 30px;
+        width: 50%;
+        object-fit: cover;
+
+        @media only screen and (max-width: 768px){
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__button{
+        border: 2px solid #000;
+        margin: 0;
+        display: inline-block;
+        color: #fff;
+        background: #000;
+        font-weight: 600;
+        border-radius: 50px;
+        padding: 0 45px 0 35px;
+        height: 42px;
+        line-height: 38px;
+        position: relative;
+        box-sizing: border-box;
+
+        &Arrow{
+            position: relative;
+            top: -3px;
+            bottom: 0;
+            margin: auto 0;
+            margin-left: 25px;
+            top: 50% !important;
+            position: absolute;
+
+            &::before{
+                content: "";
+                position: absolute;
+                top: 12px;
+                right: 20px;
+                width: 0;
+                background: #fff;
+                opacity: 0;
+                top: 0px;
+                height: 2px;
+            }
+
+            &::after{
+                content: "\f105";
+                display: inline-block;
+                font: normal normal normal 14px/1 FontAwesome;
+                text-rendering: auto;
+                position: absolute;
+                right: 0;
+                top: -1px;
+                color: #fff;
+                font-size: 18px;
+                line-height: 27px;
+                font-weight: 500;
+                line-height: 0;
+                top: 1px;
+            }
+        }
+
+        &:hover{
+            background: #ff0000;
+            border-color: #ff0000;
+            color: #fff;
+            transition: all .3s ease-in;
+
+            .about__buttonArrow{
+                opacity: 1;
+
+                &::before{
+                    opacity: 1;
+                    width: 15px;
+                    right: 3px;
+                    transition: all .3s ease-in;
+                }
+
+                &::after{
+                    line-height: 0;
+                    top: 1px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.contact{
+    &__content{
+        display: flex;
+        justify-content: center;
+        gap: 400px;
+        padding-left: 70px;
+        font-size: 20px;
+    }
+
+    &__col {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            left: -27px;
+        }
+
+        p{
+            margin-top: 0;
+        }
+
+        &--address {
+            &::before {
+                font: var(--fa-font-solid);
+                content: "\f015";
+            }
+        }
+
+        &--contact {
+            &::before {
+                font: var(--fa-font-solid);
+                content: "\f095";
+            }
+
+            .footer__link {
+                color: black;
+                text-decoration: none;
+                pointer-events: none;
+                cursor: default;
+
+                @media only screen and (max-width: 768px) and (hover: none) and (pointer: coarse) {
+                    pointer-events: auto;
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__map{
+        display: flex;
+        justify-content: center;
+        margin: 30px 0 100px 0;
+    }
+}
