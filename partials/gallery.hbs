@@ -1,0 +1,28 @@
+<ul class="gallery__wrapper">
+    {{#each images}}
+        <li class="gallery__item">
+            <button class="gallery__button">
+                <img src="{{this.src}}" alt="{{this.alt}}" loading="lazy" class="gallery__image"/> 
+            </button>
+        </li>
+    {{/each}}
+</ul>
+<dialog class="gallery__modal">
+    <button class="gallery__close-button">
+   <svg class="gallery__close-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="48px" height="48px"><path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"/></svg>
+   </button>
+    <section class="gallery__slider swiper" id="gallerySlider">
+        <div class="swiper-wrapper">
+                {{#each images}}
+                <div class="swiper-slide gallery__slider-slide">
+                    <img src="{{this.src}}" alt="{{this.alt}}" loading="lazy" class="gallery__slider-image"/> 
+                </div>
+                {{/each}}
+        </div>
+        <div class="swiper-pagination gallery__slider-pagination"></div>
+         <div class="swiper-button-prev gallery__slider-button-prev"></div>
+        <div class="swiper-button-next gallery__slider-button-next"></div>
+        </div>
+    </section>
+
+</dialog>

@@ -38,6 +38,7 @@
   &__button {
     display: none;
     @media only screen and (max-width: 1023px) {
+      cursor: pointer;
       display: block;
       color: #3a4267;
       border: none;
@@ -99,13 +100,14 @@
       align-items: flex-start;
       height: 100vh;
 z-index: -1;
+transition: all 0.3s ease-in;
     }
 
     &--active {
       @media only screen and (max-width: 1023px) {
         right: 0;
         transform: translate(0 0);
-        transition: all 0.3s ease-in;
+        
       }
     }
   }

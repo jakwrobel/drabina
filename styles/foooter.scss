@@ -27,6 +27,9 @@
     p {
         margin-top: 0;
         margin-bottom: 12px;
+        &.noBottomMargin{
+            margin-bottom: 0;;
+        }
     }
 
     &__col {
@@ -74,8 +77,10 @@
         }
 
         .footer__link {
+            pointer-events: auto;
             color: #fff;
             text-decoration: underline;
+            cursor: pointer;
 
             &:hover {
                 text-decoration: none;

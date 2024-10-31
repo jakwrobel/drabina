@@ -5,6 +5,27 @@
         gap: 400px;
         padding-left: 70px;
         font-size: 20px;
+
+        @media only screen and (max-width: 1023px){
+            gap: 250px;
+        }
+
+        @media only screen and (max-width:768px){
+            padding: 0;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            font-size: 18px;
+
+            p{
+                margin-bottom: 14px;
+            }
+        }
+
+        p{
+            margin-top: 0;
+        }
     }
 
     &__col {
@@ -15,9 +36,6 @@
             left: -27px;
         }
 
-        p{
-            margin-top: 0;
-        }
 
         &--address {
             &::before {
@@ -30,6 +48,10 @@
             &::before {
                 font: var(--fa-font-solid);
                 content: "\f095";
+            }
+
+            @media only screen and (max-width: 768px){
+                left: 44px;
             }
 
             .footer__link {

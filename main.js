@@ -1,6 +1,10 @@
 import "./styles/index.scss";
 import initMenu from "./scripts/menu";
 import initSwiper from "./scripts/home";
+import initGallery from "./scripts/gallery";
 
-initMenu();
-initSwiper();
+document.addEventListener('DOMContentLoaded',()=>{
+    initMenu();
+    initSwiper();
+    initGallery()
+})

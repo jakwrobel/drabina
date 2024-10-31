@@ -1,0 +1,80 @@
+.gallery{
+    &__modal{
+        --swiper-navigation-color: white;
+        position: relative;
+        background: rgba(0, 0, 0, 0.7);
+        height: 100vh;
+    }
+
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+        list-style: none;
+        padding: 0 0 100px;
+        margin: 0;
+
+        @media only screen and (max-width: 1023px){
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media only screen and (max-width: 768px){
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__button{
+        border: none;
+        overflow: hidden;
+    }
+
+    &__slider-slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    &__image{
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    transition: transform 0.3s ease;
+
+    &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    }
+
+    &__close-button{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border:none;
+        z-index: 2;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__close-icon{
+        fill: white;
+
+        @media only screen and (max-width:768px){
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+
+    &__slider-button-prev, &__slider-button-next{
+        top: 50vh;
+
+        @media only screen and (max-width:768px){
+            &::before, &::after{
+            font-size: 32px;
+            }
+        }
+    }
+}
