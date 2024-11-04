@@ -1,9 +1,8 @@
 .gallery{
     &__modal{
         --swiper-navigation-color: white;
-        position: relative;
+        position: fixed;
         background: rgba(0, 0, 0, 0.7);
-        height: 100vh;
     }
 
     &__wrapper{
